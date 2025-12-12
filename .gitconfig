@@ -3,20 +3,19 @@
 	name = Phil Reusswig
 [core]
 	editor = nvim
-	autocrlf = false
+	autocrlf = input
 [diff]
 	tool = nvimdiff
 [difftool]
 	prompt = false
 [difftool "nvimdiff"]
-	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+	cmd = nvim -d $LOCAL $REMOTE
 [merge]
 	tool = nvimdiff
 	conflictsytle = diff3
 [mergetool]
 	keepBackup = false
-	trustExitCode = false
+	trustExitCode = true
 	prompt = false
 [mergetool "nvimdiff"]
-	cmd = "nvim -d $LOCAL $MERGED $REMOTE -c "wincmd w""
-	layout = (LOCAL,BASE,REMOTE) / MERGED
+	layout = "LOCAL,BASE,REMOTE / MERGED"
