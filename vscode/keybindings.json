@@ -1,0 +1,14 @@
+// Place your key bindings in this file to override the defaults
+[
+    // toggle file explorer
+    {
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+        "when": "!explorerViewletVisible"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.closeSidebar",
+        "when": "explorerViewletVisible"
+    }
+]
